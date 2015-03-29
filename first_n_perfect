@@ -1,0 +1,25 @@
+n = input("Enter the number: ")
+n = int(n)
+
+
+fir_per = 6
+
+while True:
+
+    sum = 0
+    num = 1
+
+    while num < fir_per:
+        if fir_per % num == 0:
+            sum += num
+    
+        num += 1
+
+    if fir_per == sum:
+        print(fir_per)
+        n -= 1
+
+    if n == 0:
+        break
+
+    fir_per += 1
