@@ -1,0 +1,11 @@
+n = input("Enter the number: ")
+n = int(n)
+
+count = 1
+div = 0
+
+while count < n:
+    if n % count == 0:
+        div = count
+        print ("The divisor of %d is %d" % (n,div))
+    count += 1
