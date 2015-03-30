@@ -1,1 +1,40 @@
+n = input("Enter the number: ")
+n = int(n)
 
+count = 2
+flag = False
+
+while count<n:
+    if (n % count) == 0:
+        flag =False
+        print("The number %d is not prime"%n)
+        break
+    else:
+        flag = True
+    count += 1
+
+
+p =(n -2)
+
+if flag == True:
+    print("The number %d is prime"%n)
+    count2 = 2
+    flag1 = False
+    
+    while count2 < p:
+        if (p % count2) == 0:
+            flag1 =False
+            print ("The number %d is not prime" % p)
+            break
+        else:
+            flag1 = True
+        count2 += 1
+    if flag1 == True: 
+        print("The number %d is prime"%p)
+
+    
+    
+if flag == True and flag1 == True:
+    print("The number %d and %d are Twin" % (n ,p))
+elif flag == True and flag1 == False:
+    print("The number %d and %d are not Twin" % (n,p))
